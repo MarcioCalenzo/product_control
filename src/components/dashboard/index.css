@@ -46,13 +46,13 @@ nav button {
   border-radius: 5px;
   cursor: pointer;
   background-color: var(--color-grey3);
-  color: var(--color-text-dark); /* Texto do botão claro */
-  transition: background-color 0.3s; /* Adicionando transição suave */
+  color: var(--color-text-dark); 
+  transition: background-color 0.3s; 
 }
 
 .dark-mode nav button {
   background-color: var(--color-border-dark);
-  color: var(--color-text-light); /* Texto do botão escuro */
+  color: var(--color-text-light); 
 }
 
 main {
@@ -174,7 +174,7 @@ form button {
   background-color: var(--color-bg-dark);
   color: var(--color-text-dark);
   cursor: pointer;
-  transition: background-color 0.3s, border 0.3s; /* Transição suave */
+  transition: background-color 0.3s, border 0.3s; 
 }
 .dark-mode .product-list button {
   color: var(--color-bg-dark);
@@ -190,7 +190,7 @@ form button:hover,
 .dark-mode nav button:hover,
 .dark-mode form button:hover,
 .dark-mode .product-list button:hover {
-  background-color: #666; /* Cor de fundo para modo escuro */
+  background-color: #666; 
   border: 2px solid var(--color-grey0);
 }
 
