@@ -1,0 +1,208 @@
+:root {
+  --color-grey0: #ffffff; /* Cor do fundo claro */
+  --color-grey3: #cccccc; /* Cor dos botões */
+  --color-bg-light: #dfdddd; /* Cor do fundo claro */
+  --color-bg-dark: #000000; /* Cor do fundo escuro */
+  --color-text-light: #000000; /* Cor do texto claro */
+  --color-text-dark: #ffffff; /* Cor do texto escuro */
+  --color-border-light: #ccc; /* Cor da borda clara */
+  --color-border-dark: #444; /* Cor da borda escura */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  background-color: var(--color-bg-light);
+  color: var(--color-text-light);
+}
+
+.dark-mode {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-dark);
+}
+
+nav {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+nav button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--color-grey3);
+  color: var(--color-text-dark); /* Texto do botão claro */
+  transition: background-color 0.3s; /* Adicionando transição suave */
+}
+
+.dark-mode nav button {
+  background-color: var(--color-border-dark);
+  color: var(--color-text-light); /* Texto do botão escuro */
+}
+
+main {
+  margin-bottom: 20px;
+}
+
+main h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-grey0);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.dark-mode form {
+  background-color: #333;
+}
+
+form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid var(--color-border-light);
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.dark-mode form input {
+  background-color: #555;
+  color: var(--color-grey0);
+  border: 1px solid var(--color-border-dark);
+}
+
+form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-dark);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.dark-mode form button {
+  color: var(--color-bg-dark);
+  background-color: var(--color-bg-light);
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 600px;
+  max-height: 300px;
+  background-color: var(--color-grey0);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.product-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.product-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.product-list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.product-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.dark-mode .product-list {
+  background-color: #333;
+}
+
+.product-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid var(--color-border-light);
+  overflow: hidden;
+}
+
+.product-list li span {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dark-mode .product-list li {
+  border-bottom: 1px solid var(--color-border-dark);
+}
+
+.product-list li:last-child {
+  border-bottom: none;
+}
+
+.product-list button {
+  padding: 5px 10px;
+  border: 2px solid var(--color-grey0);
+  border-radius: 5px;
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-dark);
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s; /* Transição suave */
+}
+.dark-mode .product-list button {
+  color: var(--color-bg-dark);
+  background-color: var(--color-bg-light);
+}
+nav button:hover,
+form button:hover,
+.product-list button:hover {
+  background-color: #aaa;
+  border: 2px solid var(--color-grey0);
+}
+
+.dark-mode nav button:hover,
+.dark-mode form button:hover,
+.dark-mode .product-list button:hover {
+  background-color: #666; /* Cor de fundo para modo escuro */
+  border: 2px solid var(--color-grey0);
+}
+
+@media (max-width: 500px) {
+  .product-list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-list li div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

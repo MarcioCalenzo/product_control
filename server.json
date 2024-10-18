@@ -1,0 +1,29 @@
+{
+  "produto": [
+    {
+      "id": "1",
+      "codigo": 123,
+      "produto": "Placa de rede"
+    },
+    {
+      "id": "4",
+      "codigo": 123333,
+      "produto": "Roteador"
+    },
+    {
+      "id": "5",
+      "codigo": 1231111,
+      "produto": "Modem"
+    },
+    {
+      "id": "0d74",
+      "codigo": "578978979875681351548645156",
+      "produto": "Cabo de rede"
+    },
+    {
+      "id": "5f33",
+      "codigo": "11124458487557",
+      "produto": "Adaptador Wifi"
+    }
+  ]
+}
