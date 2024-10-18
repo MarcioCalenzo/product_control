@@ -1,12 +1,12 @@
 :root {
-  --color-grey0: #ffffff; /* Cor do fundo claro */
-  --color-grey3: #cccccc; /* Cor dos botões */
-  --color-bg-light: #dfdddd; /* Cor do fundo claro */
-  --color-bg-dark: #000000; /* Cor do fundo escuro */
-  --color-text-light: #000000; /* Cor do texto claro */
-  --color-text-dark: #ffffff; /* Cor do texto escuro */
-  --color-border-light: #ccc; /* Cor da borda clara */
-  --color-border-dark: #444; /* Cor da borda escura */
+  --color-grey0: #ffffff; 
+  --color-grey3: #cccccc; 
+  --color-bg-light: #dfdddd; 
+  --color-bg-dark: #000000; 
+  --color-text-light: #000000; 
+  --color-text-dark: #ffffff; 
+  --color-border-light: #ccc; 
+  --color-border-dark: #444; 
 }
 
 * {
